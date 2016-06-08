@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="CinemaCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg3-qb-OK6">
+                        <rect key="frame" x="10" y="5" width="210" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Vvb-2k-XCG"/>
+                            <constraint firstAttribute="width" constant="210" id="sjG-Yd-aWw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNw-wj-1vv">
+                        <rect key="frame" x="10" y="25" width="226" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BJE-UW-Bzj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gN-51-b2B">
+                        <rect key="frame" x="236" y="25" width="54" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="ZK7-sG-w4P"/>
+                            <constraint firstAttribute="height" constant="21" id="aS1-LH-AG0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt9-SF-rNr">
+                        <rect key="frame" x="244" y="48" width="42" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="sUc-LR-BLF"/>
+                            <constraint firstAttribute="width" constant="42" id="wSb-wd-0nQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cinemaCouponMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="AOG-we-gUd">
+                        <rect key="frame" x="37" y="49" width="17" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="Bal-vr-F0G"/>
+                            <constraint firstAttribute="height" constant="17" id="mfa-g6-cGq"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cinemaSeatMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Jg-qX-gma">
+                        <rect key="frame" x="10" y="49" width="17" height="17"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="IK9-Yh-6Bb"/>
+                            <constraint firstAttribute="width" constant="17" id="gHA-Xv-Svx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG5-v6-6i9">
+                        <rect key="frame" x="230" y="5" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="jNw-wj-1vv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="13y-CU-5cL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0gN-51-b2B" secondAttribute="trailing" constant="-11" id="BOG-hS-ZT0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pt9-SF-rNr" secondAttribute="trailing" constant="-7" id="D7z-QS-KnZ"/>
+                    <constraint firstItem="2Jg-qX-gma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="F5t-IX-Jw8"/>
+                    <constraint firstItem="jNw-wj-1vv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="IYt-54-xf1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AOG-we-gUd" secondAttribute="bottom" constant="-4.5" id="MYE-up-JE4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pt9-SF-rNr" secondAttribute="bottom" constant="-7.5" id="ZTL-Xe-vNK"/>
+                    <constraint firstItem="Pt9-SF-rNr" firstAttribute="top" secondItem="0gN-51-b2B" secondAttribute="bottom" constant="2" id="c4U-WX-m8W"/>
+                    <constraint firstItem="0gN-51-b2B" firstAttribute="leading" secondItem="jNw-wj-1vv" secondAttribute="trailing" id="cFn-hB-bSL"/>
+                    <constraint firstItem="kg3-qb-OK6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="jBi-lf-Nld"/>
+                    <constraint firstItem="AOG-we-gUd" firstAttribute="leading" secondItem="2Jg-qX-gma" secondAttribute="trailing" constant="10" id="nxc-50-SGp"/>
+                    <constraint firstItem="kg3-qb-OK6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="oyM-GB-yTh"/>
+                    <constraint firstItem="2Jg-qX-gma" firstAttribute="top" secondItem="jNw-wj-1vv" secondAttribute="bottom" constant="3" id="yOq-Af-4ng"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addressLabel" destination="jNw-wj-1vv" id="ffz-hf-OkW"/>
+                <outlet property="cinemaNamelabel" destination="kg3-qb-OK6" id="QTm-pO-3l2"/>
+                <outlet property="couponImgView" destination="AOG-we-gUd" id="gOC-9k-Mfu"/>
+                <outlet property="distanceLabel" destination="Pt9-SF-rNr" id="ZWh-lp-ixd"/>
+                <outlet property="priceLabel" destination="0gN-51-b2B" id="rb2-BG-J7b"/>
+                <outlet property="ratingLabel" destination="uG5-v6-6i9" id="kcY-Zs-Oaq"/>
+                <outlet property="seatImgView" destination="2Jg-qX-gma" id="dAw-bK-ZyI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cinemaCouponMark.png" width="17" height="17"/>
+        <image name="cinemaSeatMark.png" width="17" height="17"/>
+    </resources>
+</document>

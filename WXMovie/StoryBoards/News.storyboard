@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I37-63-i4R">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Image View Controller-->
+        <scene sceneID="K5T-Ai-Q9y">
+            <objects>
+                <viewController storyboardIdentifier="NewsImageViewController" id="lVe-Pp-n5v" customClass="NewsImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="84S-dD-sUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Jc-wY-rib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q3D-OV-ScD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-22-RfG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JKq-cU-Qiu">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsImageCell" id="ELN-fL-WAT" customClass="NewsImageCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jHE-3i-in9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="jHE-3i-in9" secondAttribute="trailing" constant="-8" id="LjA-kV-TMs"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="jHE-3i-in9" secondAttribute="bottom" constant="-8" id="MNs-wA-Uzi"/>
+                                            <constraint firstItem="jHE-3i-in9" firstAttribute="top" secondItem="ELN-fL-WAT" secondAttribute="topMargin" constant="-8" id="wIe-mf-hSr"/>
+                                            <constraint firstItem="jHE-3i-in9" firstAttribute="leading" secondItem="ELN-fL-WAT" secondAttribute="leadingMargin" constant="-8" id="x2r-hC-ZKA"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgView" destination="jHE-3i-in9" id="Jai-Z4-ruL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lVe-Pp-n5v" id="MV5-qQ-fSt"/>
+                                    <outlet property="delegate" destination="lVe-Pp-n5v" id="UV9-wB-WdZ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4bb-22-RfG" firstAttribute="leading" secondItem="q3D-OV-ScD" secondAttribute="leadingMargin" constant="-20" id="AlD-YI-bkt"/>
+                            <constraint firstItem="3Jc-wY-rib" firstAttribute="top" secondItem="4bb-22-RfG" secondAttribute="bottom" id="VOf-NV-D8o"/>
+                            <constraint firstItem="4bb-22-RfG" firstAttribute="top" secondItem="q3D-OV-ScD" secondAttribute="topMargin" id="dpG-fV-RLM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4bb-22-RfG" secondAttribute="trailing" constant="-20" id="g1H-SZ-Ikh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionFlowLayout" destination="JKq-cU-Qiu" id="ri6-pV-M3Q"/>
+                        <outlet property="collectionView" destination="4bb-22-RfG" id="YhR-9T-nnr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2J-wN-1gC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="-490"/>
+        </scene>
+        <!--新闻-->
+        <scene sceneID="FYp-DU-Eai">
+            <objects>
+                <viewController id="Hsk-mE-2ae" customClass="NewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3YL-Ss-ADU"/>
+                        <viewControllerLayoutGuide type="bottom" id="rHL-7I-roI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cvw-AU-yjo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s9-aD-zfk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Hsk-mE-2ae" id="OWW-N2-jVa"/>
+                                    <outlet property="delegate" destination="Hsk-mE-2ae" id="wLU-Dj-OhV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9s9-aD-zfk" secondAttribute="trailing" constant="-20" id="T3A-d5-b2G"/>
+                            <constraint firstItem="9s9-aD-zfk" firstAttribute="leading" secondItem="cvw-AU-yjo" secondAttribute="leadingMargin" constant="-20" id="e57-lg-W4U"/>
+                            <constraint firstItem="rHL-7I-roI" firstAttribute="top" secondItem="9s9-aD-zfk" secondAttribute="bottom" id="gZC-Yh-6Ki"/>
+                            <constraint firstItem="9s9-aD-zfk" firstAttribute="top" secondItem="3YL-Ss-ADU" secondAttribute="bottom" id="nzJ-LZ-VTT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新闻" id="A5p-iY-X4R"/>
+                    <connections>
+                        <outlet property="tableView" destination="9s9-aD-zfk" id="qhI-St-7ev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWD-1o-MaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="212"/>
+        </scene>
+        <!--News Video View Controller-->
+        <scene sceneID="VLK-F6-cJm">
+            <objects>
+                <viewController storyboardIdentifier="NewsVideoViewController" id="6GX-d8-dPi" customClass="NewsVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IS4-oY-3iH"/>
+                        <viewControllerLayoutGuide type="bottom" id="bBx-X6-K5R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cww-yl-vRn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="想看视频么？敬请关注无限互联官方网站www.wuxianedu.com,更多大牛iOS视频，高薪就业学员心得，各式APP制作尽在这里" translatesAutoresizingMaskIntoConstraints="NO" id="zJ4-9I-8WZ">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gO9-dC-lkn"/>
+                                </constraints>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="6GX-d8-dPi" id="NDZ-Dy-oXb"/>
+                                </connections>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1M0-Ri-QBg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1M0-Ri-QBg" secondAttribute="trailing" constant="-20" id="3pm-MA-Q4H"/>
+                            <constraint firstItem="1M0-Ri-QBg" firstAttribute="top" secondItem="Cww-yl-vRn" secondAttribute="topMargin" id="9uP-hZ-add"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zJ4-9I-8WZ" secondAttribute="trailing" constant="-20" id="CjU-x9-VEX"/>
+                            <constraint firstItem="zJ4-9I-8WZ" firstAttribute="top" secondItem="1M0-Ri-QBg" secondAttribute="bottom" id="Sw0-jp-eUu"/>
+                            <constraint firstItem="bBx-X6-K5R" firstAttribute="top" secondItem="zJ4-9I-8WZ" secondAttribute="bottom" id="ZRU-U7-gSy"/>
+                            <constraint firstItem="1M0-Ri-QBg" firstAttribute="leading" secondItem="Cww-yl-vRn" secondAttribute="leadingMargin" constant="-20" id="lvP-5M-IlK"/>
+                            <constraint firstItem="zJ4-9I-8WZ" firstAttribute="leading" secondItem="Cww-yl-vRn" secondAttribute="leadingMargin" constant="-20" id="qGO-xQ-KUG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1M0-Ri-QBg" id="VD6-WU-K0t"/>
+                        <outlet property="textLabel" destination="zJ4-9I-8WZ" id="2F7-st-rF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHM-o5-sUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690" y="-486"/>
+        </scene>
+        <!--News Word View Controller-->
+        <scene sceneID="1Ri-Me-uVc">
+            <objects>
+                <viewController storyboardIdentifier="NewsWordViewController" id="LP6-bc-uYP" customClass="NewsWordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pWI-BN-iwg"/>
+                        <viewControllerLayoutGuide type="bottom" id="af2-nf-k1F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mck-s8-Sal">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WX6-VU-53r">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LP6-bc-uYP" id="Ddt-1h-XOs"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WX6-VU-53r" firstAttribute="top" secondItem="Mck-s8-Sal" secondAttribute="topMargin" id="8Hm-r3-Com"/>
+                            <constraint firstItem="af2-nf-k1F" firstAttribute="top" secondItem="WX6-VU-53r" secondAttribute="bottom" id="EZv-cK-VsG"/>
+                            <constraint firstItem="WX6-VU-53r" firstAttribute="leading" secondItem="Mck-s8-Sal" secondAttribute="leadingMargin" constant="-20" id="Joc-Jl-8mn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WX6-VU-53r" secondAttribute="trailing" constant="-20" id="LmC-Sa-Aif"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="WX6-VU-53r" id="irW-Pr-74U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ez5-EK-yMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-486"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Ow9-3e-Jpm">
+            <objects>
+                <navigationController id="I37-63-i4R" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wzc-89-QzH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z8C-2e-jkT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hsk-mE-2ae" kind="relationship" relationship="rootViewController" id="8Dl-ZT-Wd0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKH-Xj-USQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="212"/>
+        </scene>
+    </scenes>
+</document>
